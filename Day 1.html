@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics of JS</title>
+  </head>
+  <body>
+    <h2>1.Java script code is wriiten between script tag.</h2>
+    <h2>2.JS is case sensitive language:</h2>
+    <p>
+      Case Sensitive means that the language keywords, variable, functions names
+      , and any other identifiers must be typed with a consistant capitalization
+      of letters.for eg. do or DO are diff variable.
+    </p>
+    <h2>Javascript is Dynamically typed:</h2>
+    <p>
+      dynamically means type of variable is checked during run time only not at
+      a compile time,hence it is also called loosly typed language
+    </p>
+    <h2>4.Datatype inference in JS:</h2>
+    <p>
+      Datatype inference means just define the value to the variable that we
+      want, and its datatype will be decalared according to the nature of value
+      defined.
+      
+    </p>
+    <h2> 5.Var in JS:</h2>
+    <p>var is the keyword that tells JavaScript you're declaring a variable.
+        <strong>Example</strong>
+        x=10;
+         <br> x is the name of that variable.
+         <br> = is the operator that tells JavaScript a value is coming up next.
+         <br> 100 is the value for the variable to store.
+        </p>
+        <p>Var keyword declare both global and local variable.If the var keyword is declared ooutside the function or
+          block then it is declared as global variable.
+        </p>
+        <h2>6. Javascript Hoisting:</h2>
+        <p>
+          Javascript Hosting means that the Javascript engine moves all the declarations to the top of the script. <br>
+        for example we can usse the variable and then we can declare the variable.</p>
+
+    <script>
+      //2.Javascript is case sensitive
+      var color, COLOR;
+      color="red";
+      COLOR="green";
+      alert (COLOR);
+
+      // 3.Javascript is Dynamically typed:
+       var name;
+       name= "Deepa";
+       alert(name);
+       name="13";
+       alert(name);
+
+      // 4.Datatype inference in JS:
+       var faculty,digit;
+       faculty = "Informaeteion Technology";
+       digit = 13;
+      alert(typeof(digit));
+       alert(typeof (faculty));
+
+
+      //5.Var in Js:
+      var name="Dipa"//global variable
+      function person(){
+        var cast="joshi"   //local variable
+        alert(cast);
+        alert(name);
+      }
+      person();
+      alert(name);
+
+
+      //6. javascript Hoisting:
+       school="little star"; //name assignment
+       alert(school);        //output
+       var school;           //Declaration of variable name
+      
+
+
+
+
+    </script>
+  </body>
+</html>
